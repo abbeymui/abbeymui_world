@@ -4,7 +4,7 @@ class CreateArticles < ActiveRecord::Migration[5.1]
       t.string :title
       t.text :content
       t.integer :category_id
-      t.boolea :active
+      t.boolean :active
 
       t.timestamps
     end
