@@ -5,5 +5,5 @@ class Article < ApplicationRecord
     validates_presence_of :content
 
     scope :active, -> { where('active = ?', true) }
-    scope :alphabetical, -> { order('caption') }
+    scope :alphabetical, -> { order('title') }
 end
